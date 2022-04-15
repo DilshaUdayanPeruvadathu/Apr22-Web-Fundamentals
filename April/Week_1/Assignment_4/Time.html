@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Input Control</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial';
+        }
+
+        #Appoinment {
+            width: 382px;
+            overflow: hidden;
+            margin: auto;
+            margin: 20 0 0 450px;
+            padding: 80px;
+            background: #6abadeba;
+            border-radius: 15px;
+
+        }
+
+        h2,p {
+            text-align: center;
+            color: #1b554a;
+        }
+
+        label {
+            color: #1b554a;
+            font-size: 17px;
+        }
+
+        #Save {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 17px;
+            padding-left: 7px;
+            color: blue;
+        }
+
+    </style>
+    <script>
+        function Saved() {
+            alert('Appoinment available from  ' + document.getElementById('Arrival').value + ' to ' + document.getElementById('Departure').value);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Appoinment Time</h2>
+    <p>Please choose your Arrival time and Departure time so Patients can book your appointment.</p>
+
+    <div id="Appoinment">
+        <form action="javascript:Saved()">
+            <p>
+                <label class="Label" for="appt">Arrival Time</label>
+                <input type="time" required id="Arrival" name="appt">
+            </p>
+            <p>
+                <label class="Label" for="appt">Departure Time</label>
+                <input type="time" required id="Departure" name="appt">
+            </p>
+            <p><input type="submit" name="Save" id="Save" value="Save"></p>
+        </form>
+    </div>
+</body>
+
+</html>
