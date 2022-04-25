@@ -1,8 +1,61 @@
 <html lang="en">
+
 <head>
-    <title>Document</title>
+    <title>Table</title>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    td{
+        text-align: center;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    </style>
 </head>
+
 <body>
-    
+    <table style="width: 60%;">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Ratheesh</td>
+            <td>Nair</td>
+            <td>Trivandrum</td>
+            <td rowspan="6">India</td>
+        </tr>
+        <tr>
+            <td>Jishnu</td>
+            <td>C K</td>
+            <td>Ernamkulam</td>
+        </tr>
+        <tr>
+            <td>Hari</td>
+            <td>KV</td>
+            <td>Kochi</td>
+        </tr>
+        <tr>
+            <td>Anu</td>
+            <td>Jackson</td>
+            <td>Mahi</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>P</td>
+            <td>Kannur</td>
+        </tr>
+        <tr>
+            <td>Keerthi</td>
+            <td>A V</td>
+            <td>Calicut</td>
+        </tr>
+    </table>
 </body>
+
 </html>
